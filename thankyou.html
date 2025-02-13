@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thank you</title>
-    <link rel="stylesheet" href="css/lastpage.css" />
-  </head>
-  <body>
-    <div id="thankyou"><b>Thank you</b></div>
 
-    <img id="rizz" src="rizz.gif" alt="rizzler god" class="responsive" />
-    <br />
-    <audio controls autoplay loop>
-      <source src="congratulations.mp3" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
-    <h1>Don't go yet!</h1>
-    <button class="button" onclick="location.href='date.html'">
-      Click me UWU
-    </button>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank you</title>
+  <link rel="stylesheet" href="css/lastpage.css" />
+</head>
+
+<body>
+  <div id="thankyou"><b>Then..|Do you Love Me?</b></div>
+  <!-- From Uiverse.io by pedertanberg -->
+
+  <button hidden="hidden" id="clickHeart" type="button" class="clickHeart" onclick="location.href='date.html'">
+    <div id="loader">
+      <div>
+      </div>
+    </div>
+  </button>
+
+  <img id="rizz" src="PussInBootsEyesGIF.gif" alt="rizzler god" class="responsive" />
+  <!-- <img id="rizzChange" src="Chinese cat giving mad looks.jpg" alt="rizz change" class="responsive"> -->
+  <br />
+  <button class="answerButton" id="noButton">ချစ်ပူး</button>
+  <button id="Btnyes" style="--i:#a955ff;--j:#ea51ff;">
+    <span class="icon">
+      ချစ်တယ်
+    </span>
+    <span class="title">I 💓 you too</span>
+  </button>
+
+  <!-- <audio controls autoplay loop> -->
+  <!--   <source src="congratulations.mp3" type="audio/mpeg" /> -->
+  <!--   Your browser does not support the audio element. -->
+  <!-- </audio> -->
+  <!-- <h1>Don't go yet!</h1> -->
+  <script>
+    document
+      .getElementById("noButton")
+      .addEventListener("mouseover", function () {
+        document.getElementById("rizz").src = "Kiryuureno.gif";
+        document.getElementById("loader").className = "";
+      });
+    document
+      .getElementById("noButton")
+      .addEventListener("mouseleave", function () {
+        document.getElementById("rizz").src = "PussInBootsEyesGIF.gif";
+        document.getElementById("loader").className = "";
+      });
+    document
+      .getElementById("Btnyes")
+      .addEventListener("mouseover", function () {
+        document.getElementById("rizz").src = "Dance funny.gif";
+        document.getElementById("loader").className = "";
+      });
+
+    document
+      .getElementById("Btnyes")
+      .addEventListener("click", function () {
+        document.getElementById("rizz").src = "download.gif";
+        document.getElementById("loader").className = "loader";
+        document.getElementById("clickHeart").removeAttribute("hidden");
+      });
+    document
+      .getElementById("Btnyes")
+      .addEventListener("mouseleave", function () {
+        document.getElementById("rizz").src = "download.gif";
+        document.getElementById("loader").className = "loader";
+      });
+
+
+  </script>
+
+</body>
+
+
 </html>
